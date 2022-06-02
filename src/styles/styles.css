@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Helvetica Neue Light';
+    src: url(HelveticaNeueLt.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Medium';
+    src: url(HelveticaNeueMed.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Bold';
+    src: url(HelveticaNeueBd.woff) format('woff');
+}
+
+:root {
+    /*colors*/
+    --dark-blue: #00152E;
+    --light-blue: #F3F6FB;
+    --light-gray: #F0E7F2;
+    --lighter-blue: #F9F9F9;
+    --white: #FFFFFF;
+    --black: #000000;
+    --green: #75D440;
+    --blue: #40BFD4;
+    --brown: #D45540;
+
+    /*font family*/
+    --font-light: 'Helvetica Neue Light', -apple-system, system-ui, sans-serif;
+    --font-medium: 'Helvetica Neue Medium', -apple-system, system-ui, sans-serif;
+    --font-bold: 'Helvetica Neue Bold', -apple-system, system-ui, sans-serif;
+
+    /*font size*/
+    --fz-xxs: 12px;
+    --fz-xs: 13px;
+    --fz-sm: 14px;
+    --fz-md: 16px;
+    --fz-lg: 18px;
+    --fz-xl: 20px;
+    --fz-xxl: 22px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-blue);
+}
