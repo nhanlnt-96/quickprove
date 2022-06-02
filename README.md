@@ -1,10 +1,12 @@
-## Download and nstall NodeJs (if not)
+# Get started
+
+### Download and install NodeJs (if not)
 
 `````bath
 https://nodejs.org/en/
 `````
 
-## Add node_modules for project
+### Add node_modules for project
 
 - Using npm
 
@@ -24,7 +26,7 @@ npm i
 yarn
 `````
 
-## Run the CLI tool to scan your template files for classes and build your CSS.
+### Run the CLI tool to scan your template files for classes and build your CSS.
 
 - Using npx
 
@@ -36,4 +38,34 @@ npx tailwindcss -i ./src/styles/styles.css -o ./dist/styles.css --watch
 
 `````bath
 yarn tailwindcss -i ./src/styles/styles.css -o ./dist/styles.css --watch
+`````
+
+# Prepare to deploy site
+
+### Minify your CSS
+
+- Using npx
+
+`````bath
+npx tailwindcss -o build.css --minify
+`````
+
+- Using yarn
+
+`````bath
+yarn tailwindcss -o build.css --minify
+`````
+
+### Deploy
+
+- Using npm
+
+`````bath
+npm deploy
+`````
+
+- Using yarn
+
+`````bath
+yarn deploy
 `````
