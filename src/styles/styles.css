@@ -19,14 +19,14 @@
 
 :root {
     /*colors*/
-    --dark-blue: #00152E;
-    --light-blue: #F3F6FB;
-    --light-gray: #F0E7F2;
+    --blue: #40BFD4;
     --lighter-blue: #F9F9F9;
+    --light-blue: #F3F6FB;
+    --dark-blue: #00152E;
+    --light-gray: #F0E7F2;
     --white: #FFFFFF;
     --black: #000000;
     --green: #75D440;
-    --blue: #40BFD4;
     --brown: #D45540;
 
     /*font family*/
@@ -53,4 +53,19 @@
 body {
     background-color: var(--light-blue);
     font-family: var(--font-light);
+}
+
+/*navbar*/
+.navbar-logo .navbar-logo__text:after {
+    content: 'prove';
+    text-transform: uppercase;
+    font-family: var(--font-bold);
+}
+
+.navbar-menu .navbar-menu__container .navbar-menu__item {
+    font-family: var(--font-medium);
+}
+
+.navbar-menu .navbar-menu__container .navbar-menu__item:hover {
+    background-color: var(--dark-blue);
 }

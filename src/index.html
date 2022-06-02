@@ -9,6 +9,108 @@
   <title>Quickprove</title>
 </head>
 <body>
+<!--<navbar>-->
+<nav>
+  <div class="max-w-7xl mx-auto px-2 md:px-6 lg:px-8">
+    <div class="relative flex items-center justify-between h-16">
+      <div class="absolute inset-y-0 left-0 flex items-center md:hidden">
+        <!-- Mobile menu button-->
+        <button type="button"
+                class="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-gray-500 focus:outline-none focus:text-gray-500"
+                aria-controls="mobile-menu"
+                aria-expanded="false" id="navbar-mobile-toggle-btn">
+          <span class="sr-only">Open main menu</span>
+          
+          <svg class="block h-6 w-6"
+               xmlns="http://www.w3.org/2000/svg"
+               fill="none"
+               viewBox="0 0 24 24"
+               stroke-width="2"
+               stroke="currentColor"
+               aria-hidden="true" id="navbar-mobile-toggle-open">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          
+          <svg class="hidden h-6 w-6"
+               xmlns="http://www.w3.org/2000/svg"
+               fill="none"
+               viewBox="0 0 24 24"
+               stroke-width="2"
+               stroke="currentColor"
+               aria-hidden="true" id="navbar-mobile-toggle-close">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      
+      <div
+          class="flex-1 flex items-center justify-center sm:justify-around sm:items-stretch sm:justify-start navbar-container">
+        <!--        NAVBAR LOGO-->
+        <div class="flex-shrink-0 flex items-center navbar-logo">
+          <h1 class="uppercase text-2xl navbar-logo__text">quick</h1>
+        </div>
+        <!--        NAVBAR CENTER MENU-->
+        <div class="hidden md:block sm:ml-6 navbar-menu">
+          <div class="flex space-x-4 navbar-menu__container">
+            <a href="#"
+               class="text-black hover:text-white px-3 py-2 rounded-md text-base navbar-menu__item"
+               aria-current="page">
+              Startseite
+            </a>
+            
+            <a href="#"
+               class="text-black hover:text-white px-3 py-2 rounded-md text-base navbar-menu__item">
+              Modulübersicht
+            </a>
+            
+            <a href="#"
+               class="text-black hover:text-white px-3 py-2 rounded-md text-base navbar-menu__item">
+              FAQ
+            </a>
+          </div>
+        </div>
+        <!--        NAVBAR RIGHT MENU-->
+        <div class="hidden md:block flex items-center justify-center navbar-menu">
+          <div class="flex space-x-4 navbar-menu__container">
+            <a href="#"
+               class="text-black hover:text-white px-3 py-2 rounded-md text-base navbar-menu__item"
+               aria-current="page">
+              Jetzt testen
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Mobile menu, show/hide based on menu state. -->
+  <div class="hidden navbar-menu" id="navbar-mobile-menu">
+    <div class="px-2 pt-2 pb-3 space-y-1 navbar-menu__container">
+      <a href="#" class="text-black hover:text-white block px-3 py-2 rounded-md text-base navbar-menu__item"
+         aria-current="page">
+        Startseite
+      </a>
+      
+      <a href="#"
+         class="text-black hover:text-white block px-3 py-2 rounded-md text-base navbar-menu__item">
+        Modulübersicht
+      </a>
+      
+      <a href="#"
+         class="text-black hover:text-white block px-3 py-2 rounded-md text-base navbar-menu__item">
+        FAQ
+      </a>
+      
+      <a href="#"
+         class="text-black hover:text-white block px-3 py-2 rounded-md text-base navbar-menu__item">
+        Jetzt testen
+      </a>
+    </div>
+  </div>
+</nav>
+<!--</navbar>-->
 
+<!--javascript-->
+<script src="js/index.js"></script>
 </body>
 </html>
