@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
     font-family: 'Helvetica Neue Light';
     src: url(HelveticaNeueLt.woff) format('woff');
@@ -48,4 +52,5 @@
 
 body {
     background-color: var(--light-blue);
+    font-family: var(--font-light);
 }

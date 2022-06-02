@@ -2,6 +2,8 @@
   "name": "quickprove",
   "version": "1.0.0",
   "main": "index.js",
+  "repository": "https://github.com/nhanlnt-96/quickprove.git",
+  "author": "nhanlnt-96 <nhanlnt@hotmail.com>",
   "license": "MIT",
   "devDependencies": {
     "tailwindcss": "^3.0.24"
