@@ -249,12 +249,40 @@ body {
     background-color: var(--black-700);
 }
 
+/*footer*/
+.footer-container .footer-menu .footer-menu__title {
+    font-family: var(--font-bold);
+}
+
+.footer-container .footer-menu .footer-menu__container .footer-menu__item {
+    color: var(--black-700);
+    transition: all .5s linear;
+}
+
+.footer-container .footer-menu .footer-menu__container .footer-menu__item:hover {
+    color: var(--dark-blue);
+    opacity: 1;
+}
+
+.footer-container .footer-project__version {
+    border-color: var(--light-gray);
+}
+
+.footer-project__version > p {
+    color: var(--black-700);
+}
 
 /*generic class*/
 .section-button {
     background-color: var(--dark-blue);
     padding: 16px 38px;
     font-family: var(--font-medium);
+    transition: all .5s linear;
+}
+
+.section-button:hover {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
 }
 
 .section-title > .sub-title, .section-title > .description {
