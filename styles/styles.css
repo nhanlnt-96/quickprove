@@ -4,17 +4,17 @@
 
 @font-face {
     font-family: 'Helvetica Neue Light';
-    src: url(HelveticaNeueLt.woff) format('woff');
+    src: url('../fonts/HelveticaNeueLt.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Helvetica Neue Medium';
-    src: url(HelveticaNeueMed.woff) format('woff');
+    src: url('../fonts/HelveticaNeueMed.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Helvetica Neue Bold';
-    src: url(HelveticaNeueBd.woff) format('woff');
+    src: url('../fonts/HelveticaNeueBd.woff') format('woff');
 }
 
 :root {

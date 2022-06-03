@@ -749,19 +749,19 @@ Ensure the default browser behavior of the `hidden` attribute.
 @font-face {
   font-family: 'Helvetica Neue Light';
 
-  src: url(HelveticaNeueLt.woff) format('woff');
+  src: url('../fonts/HelveticaNeueLt.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Helvetica Neue Medium';
 
-  src: url(HelveticaNeueMed.woff) format('woff');
+  src: url('../fonts/HelveticaNeueMed.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Helvetica Neue Bold';
 
-  src: url(HelveticaNeueBd.woff) format('woff');
+  src: url('../fonts/HelveticaNeueBd.woff') format('woff');
 }
 
 :root {
@@ -937,6 +937,10 @@ body {
 @media (min-width: 640px) {
   .sm\:ml-6 {
     margin-left: 1.5rem;
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sm\:items-stretch {
