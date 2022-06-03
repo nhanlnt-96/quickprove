@@ -69,3 +69,48 @@ body {
 .navbar-menu .navbar-menu__container .navbar-menu__item:hover {
     background-color: var(--dark-blue);
 }
+
+/*hero section*/
+.hero-section {
+    background: url("../assets/imgs/hero/bg.png") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.hero-section__container {
+    min-height: calc(100vh - 64px);
+}
+
+.hero-section-container__wrapper {
+    background: url("../assets/imgs/hero/bg-circles.png") no-repeat center;
+    background-size: contain;
+}
+
+.hero-section-container__wrapper .hero-section__content .hero-section-sub__title {
+    color: #00152E;
+}
+
+
+.hero-section-container__wrapper .hero-section__content .hero-section__title {
+    color: var(--dark-blue);
+    font-family: var(--font-bold);
+}
+
+@media (min-width: 768px) {
+    .hero-section-container__wrapper .hero-section__content .hero-section__title {
+        line-height: 72px;
+    }
+}
+
+.hero-section-container__wrapper .hero-section__content .hero-section__description {
+    color: #202020;
+}
+
+.hero-section-container__wrapper .hero-section__button {
+    margin-bottom: 53px;
+}
+
+.hero-section-container__wrapper .hero-section__button .hero-section-button__item {
+    background-color: var(--dark-blue);
+    padding: 16px 38px;
+    font-family: var(--font-medium);
+}

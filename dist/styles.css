@@ -468,6 +468,40 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -502,6 +536,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .block {
   display: block;
 }
@@ -526,8 +572,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 1.5rem;
 }
 
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .w-6 {
   width: 1.5rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .max-w-7xl {
@@ -570,6 +624,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.375rem;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -589,12 +647,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.5rem;
 }
 
+.px-1\.5 {
+  padding-left: 0.375rem;
+  padding-right: 0.375rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .pt-2 {
   padding-top: 0.5rem;
 }
 
 .pb-3 {
   padding-bottom: 0.75rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-2xl {
@@ -607,13 +679,44 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.5rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
 .uppercase {
   text-transform: uppercase;
+}
+
+.leading-6 {
+  line-height: 1.5rem;
+}
+
+.leading-9 {
+  line-height: 2.25rem;
 }
 
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.opacity-70 {
+  opacity: 0.7;
 }
 
 @font-face {
@@ -686,6 +789,51 @@ body {
   background-color: var(--dark-blue);
 }
 
+/*hero section*/
+
+.hero-section {
+  background: url("../assets/imgs/hero/bg.png") no-repeat center;
+  background-size: 100% 100%;
+}
+
+.hero-section__container {
+  min-height: calc(100vh - 64px);
+}
+
+.hero-section-container__wrapper {
+  background: url("../assets/imgs/hero/bg-circles.png") no-repeat center;
+  background-size: contain;
+}
+
+.hero-section-container__wrapper .hero-section__content .hero-section-sub__title {
+  color: #00152E;
+}
+
+.hero-section-container__wrapper .hero-section__content .hero-section__title {
+  color: var(--dark-blue);
+  font-family: var(--font-bold);
+}
+
+@media (min-width: 768px) {
+  .hero-section-container__wrapper .hero-section__content .hero-section__title {
+    line-height: 72px;
+  }
+}
+
+.hero-section-container__wrapper .hero-section__content .hero-section__description {
+  color: #202020;
+}
+
+.hero-section-container__wrapper .hero-section__button {
+  margin-bottom: 53px;
+}
+
+.hero-section-container__wrapper .hero-section__button .hero-section-button__item {
+  background-color: var(--dark-blue);
+  padding: 16px 38px;
+  font-family: var(--font-medium);
+}
+
 .hover\:text-gray-500:hover {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
@@ -722,6 +870,16 @@ body {
   .sm\:justify-around {
     justify-content: space-around;
   }
+
+  .sm\:px-1\.5 {
+    padding-left: 0.375rem;
+    padding-right: 0.375rem;
+  }
+
+  .sm\:px-1 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -733,9 +891,31 @@ body {
     display: none;
   }
 
+  .md\:w-4\/5 {
+    width: 80%;
+  }
+
+  .md\:p-0 {
+    padding: 0px;
+  }
+
   .md\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:leading-9 {
+    line-height: 2.25rem;
   }
 }
 
@@ -743,5 +923,15 @@ body {
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:w-9\/12 {
+    width: 75%;
+  }
+
+  .xl\:pt-16 {
+    padding-top: 4rem;
   }
 }
