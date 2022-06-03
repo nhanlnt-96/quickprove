@@ -29,11 +29,11 @@ yarn
 - Using npx
 
 `````bath
-npx tailwindcss -i ./src/styles/styles.css -o ./dist/styles.css --watch
+npx tailwindcss -i ./styles/styles.css -o ./dist/styles.css --watch
 `````
 
 - Using yarn
 
 `````bath
-yarn tailwindcss -i ./src/styles/styles.css -o ./dist/styles.css --watch
+yarn tailwindcss -i ./styles/styles.css -o ./dist/styles.css --watch
 `````
