@@ -145,28 +145,29 @@ body {
 }
 
 /*services banner*/
-.services-banner-image__container {
+/*services banner 1*/
+.services-banner-1-image__container {
     width: 100%;
 }
 
 @media (min-width: 768px) {
-    .services-banner-image__container {
+    .services-banner-1-image__container {
         width: 552px;
         position: relative;
     }
 
-    .services-banner-image__container .services-banner-image__item {
+    .services-banner-1-image__container .services-banner-1-image__item {
         padding-bottom: calc(139 / 552 * 100%);
     }
 }
 
-.services-banner-image__container .services-banner-image__item > img {
+.services-banner-1-image__container .services-banner-1-image__item > img {
     width: 100%;
     height: 100%;
 }
 
 @media (min-width: 768px) {
-    .services-banner-image__container .services-banner-image__item > img {
+    .services-banner-1-image__container .services-banner-1-image__item > img {
         width: 100%;
         height: 100%;
         position: absolute;
@@ -175,7 +176,7 @@ body {
     }
 }
 
-.services-banner__container .services-banner-content__title {
+.services-banner-1__container .services-banner-1-content__title, .services-banner-2__container .services-banner-2-content__title {
     font-family: var(--font-bold);
     line-height: 38px;
     font-size: 30px;
@@ -183,14 +184,47 @@ body {
 }
 
 @media (min-width: 768px) {
-    .services-banner__container .services-banner-content__title {
+    .services-banner-1__container .services-banner-1-content__title, .services-banner-2__container .services-banner-2-content__title {
         font-size: 40px;
         line-height: 48px;
     }
 }
 
-.services-banner__container .services-banner-content__description {
+.services-banner-1__container .services-banner-1-content__description {
     color: var(--black-700);
+}
+
+/*services banner 2*/
+.services-banner__2 {
+    background-color: var(--dark-blue);
+}
+
+.services-banner-2__container .services-banner-2-content__title {
+    color: var(--white);
+}
+
+.services-banner-2-image__container {
+    width: 100%;
+    background-color: var(--white);
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .services-banner-2-image__container {
+        width: 400px;
+    }
+}
+
+.services-banner-2-image__container .services-banner-2-image__item {
+    padding-bottom: 100%;
+}
+
+.services-banner-2-image__container .services-banner-2-image__item > img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 /*generic class*/
