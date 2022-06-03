@@ -531,6 +531,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 0px;
 }
 
+.top-0 {
+  top: 0px;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -586,6 +594,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-14 {
   height: 3.5rem;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .min-h-screen {
@@ -664,6 +676,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.75rem;
 }
 
+.rounded-tl-3xl {
+  border-top-left-radius: 1.5rem;
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -713,10 +729,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-3 {
   padding-bottom: 0.75rem;
-}
-
-.pb-24 {
-  padding-bottom: 6rem;
 }
 
 .pb-12 {
@@ -775,6 +787,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .opacity-70 {
   opacity: 0.7;
+}
+
+.opacity-10 {
+  opacity: 0.1;
 }
 
 @font-face {
@@ -961,7 +977,7 @@ body {
   }
 }
 
-.services-banner-1__container .services-banner-1-content__title, .services-banner-2__container .services-banner-2-content__title, .services-banner-3__container .services-banner-3-content__title {
+.services-banner-1__container .services-banner-1-content__title, .services-banner-2__container .services-banner-2-content__title, .services-banner-3__container .services-banner-3-content__title, .footer-banner__container .footer-banner-content__title {
   font-family: var(--font-bold);
   line-height: 38px;
   font-size: 30px;
@@ -969,13 +985,14 @@ body {
 }
 
 @media (min-width: 768px) {
-  .services-banner-1__container .services-banner-1-content__title, .services-banner-2__container .services-banner-2-content__title, .services-banner-3__container .services-banner-3-content__title {
+  .services-banner-1__container .services-banner-1-content__title, .services-banner-2__container .services-banner-2-content__title, .services-banner-3__container .services-banner-3-content__title, .footer-banner__container .footer-banner-content__title {
     font-size: 40px;
     line-height: 48px;
   }
 }
 
-.services-banner-1__container .services-banner-1-content__description, .services-banner-3__container .services-banner-3-content__description {
+.services-banner-1__container .services-banner-1-content__description, .services-banner-3__container .services-banner-3-content__description,
+.footer-banner__container .footer-banner-content__description {
   color: var(--black-700);
 }
 
@@ -1025,6 +1042,12 @@ body {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+/*footer banner*/
+
+.footer-banner .footer-banner__bg {
+  background-color: var(--black-700);
 }
 
 /*generic class*/
@@ -1091,11 +1114,6 @@ body {
 
   .sm\:justify-around {
     justify-content: space-around;
-  }
-
-  .sm\:px-3 {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
   }
 }
 
@@ -1165,6 +1183,14 @@ body {
     margin-bottom: 0px;
   }
 
+  .xl\:block {
+    display: block;
+  }
+
+  .xl\:hidden {
+    display: none;
+  }
+
   .xl\:w-9\/12 {
     width: 75%;
   }
@@ -1185,6 +1211,26 @@ body {
     align-items: flex-start;
   }
 
+  .xl\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .xl\:rounded-none {
+    border-radius: 0px;
+  }
+
+  .xl\:rounded-tl-3xl {
+    border-top-left-radius: 1.5rem;
+  }
+
+  .xl\:rounded-br-3xl {
+    border-bottom-right-radius: 1.5rem;
+  }
+
+  .xl\:rounded-bl-3xl {
+    border-bottom-left-radius: 1.5rem;
+  }
+
   .xl\:p-0 {
     padding: 0px;
   }
@@ -1199,8 +1245,22 @@ body {
     padding-bottom: 10rem;
   }
 
+  .xl\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .xl\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .xl\:pt-16 {
     padding-top: 4rem;
+  }
+
+  .xl\:pl-20 {
+    padding-left: 5rem;
   }
 
   .xl\:text-left {
