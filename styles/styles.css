@@ -134,9 +134,13 @@ body {
     object-fit: contain;
 }
 
-.services-section__item .services-section-item__title {
+.services-section__item .services-section-item__title, .use-case__item .use-case-item__title {
     font-family: var(--font-bold);
     color: var(--dark-blue)
+}
+
+.services-section__item .services-section-item__description, .use-case__item .use-case-item__description {
+    color: var(--black-700);
 }
 
 .services-section__item .services-section-item__select {
@@ -227,6 +231,19 @@ body {
     top: 0;
 }
 
+/*use case section*/
+.use-case__items .use-case__item .use-case-item__icon .use-case-item-icon__container {
+    width: 40px;
+    height: 40px;
+}
+
+.use-case__items .use-case__item .use-case-item__icon .use-case-item-icon__container > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
 /*generic class*/
 .section-button {
     background-color: var(--dark-blue);
@@ -235,7 +252,7 @@ body {
 }
 
 .section-title > .sub-title, .section-title > .description {
-    font-family: var(--font-medium);
+    color: var(--black-700);
 }
 
 .section-title > .title {
